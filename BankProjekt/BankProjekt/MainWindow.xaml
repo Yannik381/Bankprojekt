@@ -1,0 +1,28 @@
+﻿<Window x:Class="BankProjekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankProjekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="442" Width="889.491">
+    <Grid Margin="0,0,29,10">
+        <Button Content="Abheben" HorizontalAlignment="Left" Margin="79,245,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Einzahlen" HorizontalAlignment="Left" Margin="79,281,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Überweisen" HorizontalAlignment="Left" Margin="291,324,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <TextBox Name="textBoxBetrag" HorizontalAlignment="Left" Height="23" Margin="189,283,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="1.945,1.352"/>
+        <TextBox Name="textBoxEingangsKonto" HorizontalAlignment="Left" Height="23" Margin="291,278,0,0" TextWrapping="Wrap" Text="Eingangskontonummer" VerticalAlignment="Top" Width="153"/>
+        <Label Name="labelKontostand" Content="0" HorizontalAlignment="Left" Margin="107,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.9,0.615" Height="28" Width="47"/>
+        <TextBox Name="textBoxVerwendungszweck" HorizontalAlignment="Left" Height="23" Margin="291,245,0,0" TextWrapping="Wrap" Text="Verwendungszweck" VerticalAlignment="Top" Width="153"/>
+        <ListBox Name="listBoxTransaktionen" HorizontalAlignment="Left" Height="292" Margin="504,82,0,0" VerticalAlignment="Top" Width="340"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="141" Margin="60,233,0,0" VerticalAlignment="Top" Width="420"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="25" Margin="57,94,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="€" HorizontalAlignment="Left" Margin="189,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.708,2.096"/>
+        <Label Content="€" HorizontalAlignment="Left" Margin="232,280,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.708,2.096"/>
+        <Label Content="Betrag" HorizontalAlignment="Left" Margin="182,252,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.239,0.622"/>
+        <Label Content="Transaktionen" HorizontalAlignment="Left" Margin="60,187,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Transaktionshistorie" HorizontalAlignment="Left" Margin="587,43,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Aktueller Kontostand" HorizontalAlignment="Left" Margin="58,43,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
